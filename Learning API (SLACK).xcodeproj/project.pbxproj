@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		15551B8BA6C05127BEEE748E /* Pods_Learning_API__SLACK_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748002A171C81300EC79AEE3 /* Pods_Learning_API__SLACK_.framework */; };
 		2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CEE2283CE50009F837C /* SWRevealViewController.m */; };
+		2E965CF42283D27C009F837C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CF32283D27C009F837C /* ChatVC.swift */; };
+		2E965CF62283D28A009F837C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CF52283D28A009F837C /* ChannelVC.swift */; };
 		2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC815092283C3C30094C744 /* AppDelegate.swift */; };
-		2EC8150C2283C3C30094C744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8150B2283C3C30094C744 /* ViewController.swift */; };
 		2EC8150F2283C3C30094C744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8150D2283C3C30094C744 /* Main.storyboard */; };
 		2EC815112283C3C50094C744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC815102283C3C50094C744 /* Assets.xcassets */; };
 		2EC815142283C3C50094C744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC815122283C3C50094C744 /* LaunchScreen.storyboard */; };
@@ -21,9 +22,10 @@
 		2E965CEC2283CE4F009F837C /* Learning API (SLACK)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Learning API (SLACK)-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E965CED2283CE4F009F837C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		2E965CEE2283CE50009F837C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		2E965CF32283D27C009F837C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		2E965CF52283D28A009F837C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		2EC815062283C3C30094C744 /* Learning API (SLACK).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning API (SLACK).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC815092283C3C30094C744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EC8150B2283C3C30094C744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EC8150E2283C3C30094C744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EC815102283C3C50094C744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EC815132283C3C50094C744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,29 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2E965CF02283D248009F837C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E965CF32283D27C009F837C /* ChatVC.swift */,
+				2E965CF52283D28A009F837C /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E965CF12283D253009F837C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E965CF22283D257009F837C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2EC814FD2283C3C30094C744 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +100,11 @@
 		2EC815082283C3C30094C744 /* Learning API (SLACK) */ = {
 			isa = PBXGroup;
 			children = (
+				2E965CF22283D257009F837C /* Model */,
+				2E965CF12283D253009F837C /* View */,
+				2E965CF02283D248009F837C /* Controller */,
 				2E965CEB2283CE2E009F837C /* Supporting Files */,
 				2EC815092283C3C30094C744 /* AppDelegate.swift */,
-				2EC8150B2283C3C30094C744 /* ViewController.swift */,
 				2EC8150D2283C3C30094C744 /* Main.storyboard */,
 				2EC815102283C3C50094C744 /* Assets.xcassets */,
 				2EC815122283C3C50094C744 /* LaunchScreen.storyboard */,
@@ -230,7 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC8150C2283C3C30094C744 /* ViewController.swift in Sources */,
+				2E965CF62283D28A009F837C /* ChannelVC.swift in Sources */,
+				2E965CF42283D27C009F837C /* ChatVC.swift in Sources */,
 				2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */,
 				2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */,
 			);

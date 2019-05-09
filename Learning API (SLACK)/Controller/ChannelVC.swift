@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChannelVC.swift
 //  Learning API (SLACK)
 //
 //  Created by Thien Vu Le on May/9/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChannelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.revealViewController()?.rearViewRevealWidth = view.bounds.width - 60
     }
-
-
 }
-
