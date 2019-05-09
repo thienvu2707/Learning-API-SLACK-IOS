@@ -11,6 +11,7 @@
 		2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CEE2283CE50009F837C /* SWRevealViewController.m */; };
 		2E965CF42283D27C009F837C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CF32283D27C009F837C /* ChatVC.swift */; };
 		2E965CF62283D28A009F837C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CF52283D28A009F837C /* ChannelVC.swift */; };
+		2E965CF82283E3B8009F837C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CF72283E3B8009F837C /* GradientView.swift */; };
 		2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC815092283C3C30094C744 /* AppDelegate.swift */; };
 		2EC8150F2283C3C30094C744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8150D2283C3C30094C744 /* Main.storyboard */; };
 		2EC815112283C3C50094C744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC815102283C3C50094C744 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		2E965CEE2283CE50009F837C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		2E965CF32283D27C009F837C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		2E965CF52283D28A009F837C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		2E965CF72283E3B8009F837C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2EC815062283C3C30094C744 /* Learning API (SLACK).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning API (SLACK).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC815092283C3C30094C744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC8150E2283C3C30094C744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		2E965CF02283D248009F837C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2EC815092283C3C30094C744 /* AppDelegate.swift */,
 				2E965CF32283D27C009F837C /* ChatVC.swift */,
 				2E965CF52283D28A009F837C /* ChannelVC.swift */,
 			);
@@ -68,6 +71,9 @@
 		2E965CF12283D253009F837C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2EC8150D2283C3C30094C744 /* Main.storyboard */,
+				2EC815122283C3C50094C744 /* LaunchScreen.storyboard */,
+				2E965CF72283E3B8009F837C /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,10 +110,7 @@
 				2E965CF12283D253009F837C /* View */,
 				2E965CF02283D248009F837C /* Controller */,
 				2E965CEB2283CE2E009F837C /* Supporting Files */,
-				2EC815092283C3C30094C744 /* AppDelegate.swift */,
-				2EC8150D2283C3C30094C744 /* Main.storyboard */,
 				2EC815102283C3C50094C744 /* Assets.xcassets */,
-				2EC815122283C3C50094C744 /* LaunchScreen.storyboard */,
 				2EC815152283C3C50094C744 /* Info.plist */,
 			);
 			path = "Learning API (SLACK)";
@@ -259,6 +262,7 @@
 			files = (
 				2E965CF62283D28A009F837C /* ChannelVC.swift in Sources */,
 				2E965CF42283D27C009F837C /* ChatVC.swift in Sources */,
+				2E965CF82283E3B8009F837C /* GradientView.swift in Sources */,
 				2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */,
 				2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */,
 			);
