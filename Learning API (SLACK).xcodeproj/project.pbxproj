@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15551B8BA6C05127BEEE748E /* Pods_Learning_API__SLACK_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748002A171C81300EC79AEE3 /* Pods_Learning_API__SLACK_.framework */; };
+		2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E965CEE2283CE50009F837C /* SWRevealViewController.m */; };
 		2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC815092283C3C30094C744 /* AppDelegate.swift */; };
 		2EC8150C2283C3C30094C744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8150B2283C3C30094C744 /* ViewController.swift */; };
 		2EC8150F2283C3C30094C744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8150D2283C3C30094C744 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068A59F5CF99B5E21B69368B /* Pods-Learning API (SLACK).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning API (SLACK).release.xcconfig"; path = "Target Support Files/Pods-Learning API (SLACK)/Pods-Learning API (SLACK).release.xcconfig"; sourceTree = "<group>"; };
+		2E965CEC2283CE4F009F837C /* Learning API (SLACK)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Learning API (SLACK)-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E965CED2283CE4F009F837C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2E965CEE2283CE50009F837C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		2EC815062283C3C30094C744 /* Learning API (SLACK).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning API (SLACK).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC815092283C3C30094C744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC8150B2283C3C30094C744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		2EC815102283C3C50094C744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EC815132283C3C50094C744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EC815152283C3C50094C744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64356D9C6414501F31F74422 /* Pods-Learning API (SLACK).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning API (SLACK).debug.xcconfig"; path = "Target Support Files/Pods-Learning API (SLACK)/Pods-Learning API (SLACK).debug.xcconfig"; sourceTree = "<group>"; };
+		748002A171C81300EC79AEE3 /* Pods_Learning_API__SLACK_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_API__SLACK_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15551B8BA6C05127BEEE748E /* Pods_Learning_API__SLACK_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E965CEB2283CE2E009F837C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E965CED2283CE4F009F837C /* SWRevealViewController.h */,
+				2E965CEE2283CE50009F837C /* SWRevealViewController.m */,
+				2E965CEC2283CE4F009F837C /* Learning API (SLACK)-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2EC814FD2283C3C30094C744 = {
 			isa = PBXGroup;
 			children = (
 				2EC815082283C3C30094C744 /* Learning API (SLACK) */,
 				2EC815072283C3C30094C744 /* Products */,
+				C1A6479DC2F7221548A146BD /* Pods */,
+				A6691ED5475F8FE2BBB3861F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,7 @@
 		2EC815082283C3C30094C744 /* Learning API (SLACK) */ = {
 			isa = PBXGroup;
 			children = (
+				2E965CEB2283CE2E009F837C /* Supporting Files */,
 				2EC815092283C3C30094C744 /* AppDelegate.swift */,
 				2EC8150B2283C3C30094C744 /* ViewController.swift */,
 				2EC8150D2283C3C30094C744 /* Main.storyboard */,
@@ -64,6 +86,23 @@
 			path = "Learning API (SLACK)";
 			sourceTree = "<group>";
 		};
+		A6691ED5475F8FE2BBB3861F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				748002A171C81300EC79AEE3 /* Pods_Learning_API__SLACK_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1A6479DC2F7221548A146BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64356D9C6414501F31F74422 /* Pods-Learning API (SLACK).debug.xcconfig */,
+				068A59F5CF99B5E21B69368B /* Pods-Learning API (SLACK).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EC815182283C3C50094C744 /* Build configuration list for PBXNativeTarget "Learning API (SLACK)" */;
 			buildPhases = (
+				07FDCA778159721F015B4C40 /* [CP] Check Pods Manifest.lock */,
 				2EC815022283C3C30094C744 /* Sources */,
 				2EC815032283C3C30094C744 /* Frameworks */,
 				2EC815042283C3C30094C744 /* Resources */,
+				E5B6B73D0F0999323E355CF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					2EC815052283C3C30094C744 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07FDCA778159721F015B4C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Learning API (SLACK)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B6B73D0F0999323E355CF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Learning API (SLACK)/Pods-Learning API (SLACK)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Learning API (SLACK)/Pods-Learning API (SLACK)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EC815022283C3C30094C744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +232,7 @@
 			files = (
 				2EC8150C2283C3C30094C744 /* ViewController.swift in Sources */,
 				2EC8150A2283C3C30094C744 /* AppDelegate.swift in Sources */,
+				2E965CEF2283CE50009F837C /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +376,10 @@
 		};
 		2EC815192283C3C50094C744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64356D9C6414501F31F74422 /* Pods-Learning API (SLACK).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGKWMC3UA4;
 				INFOPLIST_FILE = "Learning API (SLACK)/Info.plist";
@@ -291,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thienvule.Learning-API--SLACK-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Learning API (SLACK)/Supporting Files/Learning API (SLACK)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +398,10 @@
 		};
 		2EC8151A2283C3C50094C744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068A59F5CF99B5E21B69368B /* Pods-Learning API (SLACK).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGKWMC3UA4;
 				INFOPLIST_FILE = "Learning API (SLACK)/Info.plist";
@@ -309,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thienvule.Learning-API--SLACK-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Learning API (SLACK)/Supporting Files/Learning API (SLACK)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
