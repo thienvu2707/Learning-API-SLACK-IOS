@@ -1,0 +1,6 @@
+framework module Pods_Learning_API__SLACK_ {
+  umbrella header "Pods-Learning API (SLACK)-umbrella.h"
+
+  export *
+  module * { export * }
+}
